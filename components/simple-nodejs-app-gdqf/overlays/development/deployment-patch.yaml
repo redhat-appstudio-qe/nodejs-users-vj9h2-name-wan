@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-gdqf
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-bibl-tenant/nodejs-users/simple-nodejs-app-gdqf@sha256:1083d36e3efdb60a0626dbaf059d03c3762e82d4b3a0ea79eb40bf4425c6db62
+        name: my-nodejs
+        resources: {}
+status: {}
